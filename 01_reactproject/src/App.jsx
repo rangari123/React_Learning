@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Greet from "./comp";
+import Greet from "./Greet";
 
 function App() {
   return (
