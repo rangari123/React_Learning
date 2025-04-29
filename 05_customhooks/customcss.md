@@ -1,4 +1,34 @@
-let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`
+fetch(
+`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`
+)
+
+# --------------------labels --------------------------
+
+// {
+// label, // The label for the input field (e.g., "From" or "To" for currency input).
+// amount, // The value of the amount input (e.g., the amount of currency the user enters).
+
+// onAmountChange, // A callback function that is triggered when the amount input value changes.
+// It is used to update the `amount` state in the parent component.
+
+// onCurrencyChange, // A callback function that is triggered when the currency dropdown value changes.
+// It updates the `selectCurrency` state in the parent component.
+
+// currencyOptions = [], // An array of currency options (e.g., ["usd", "inr", "eur"]).
+// These will be displayed in the currency dropdown.
+
+// selectCurrency = "usd", // The currently selected currency for the input (defaults to "usd" if not provided).
+// This represents the currency the user wants to convert from or to.
+
+// amountDisable = false, // A boolean value that determines whether the amount input field is disabled or not.
+// If set to `true`, the user cannot interact with the amount input field.
+
+// currencyDisable = false, // A boolean value that determines whether the currency dropdown is disabled or not.
+// If set to `true`, the user cannot change the selected currency.
+
+// className = "", // A string that allows the parent component to pass custom CSS classes for styling.
+// This lets the parent component customize the appearance of the `InputBox` component.
+// }
 
 # ----------------------------input-------------
 

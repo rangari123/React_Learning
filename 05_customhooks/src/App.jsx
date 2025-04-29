@@ -5,7 +5,6 @@ import "./App.css";
 
 function App() {
   //  getting the value which are gonna change/state
-
   const [amount, setAmout] = useState(0); // given amount
   const [from, setFrom] = useState("usd");
   const [to, setTo] = useState("inr");
@@ -29,7 +28,7 @@ function App() {
   // btn event listener
   const convert = () => {
     if (!CurrencyInfo || !CurrencyInfo[to]) {
-      console.log("Currency data not loaded yet. Please try again.");
+      alert("Currency data not loaded yet. Please try again.");
       return;
     }
 
